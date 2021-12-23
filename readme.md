@@ -7,7 +7,7 @@ Get the thumbnail of youtube and vimeo videos from the url. The returned informa
 Install the latest version with
 
 ```bash
-$ composer require fernandovaller/video-thumbnail-url
+$ composer require fernandovaller/thumbnail
 ```
 
 ## Basic Usage
