@@ -1,0 +1,22 @@
+{
+    "name": "fernandovaller/thumbnail",
+    "description": "Get the thumbnail of youtube and vimeo videos from the url. The returned information is ID and URL of the thumbnail",
+    "autoload": {
+        "psr-4": {
+            "FVCode\\Thumbnail\\": "src/"
+        }
+    },
+    "keywords": [
+        "Video",
+        "Thumbnail"
+    ],
+    "license": "MIT",
+    "authors": [{
+        "name": "Fernando Valler",
+        "email": "fernandovaller@gmail.com"
+    }],
+    "require": {
+        "symfony/var-dumper": "^5.4",
+        "guzzlehttp/guzzle": "^7.4"
+    }
+}
