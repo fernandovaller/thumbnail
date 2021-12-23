@@ -16,7 +16,6 @@
         "email": "fernandovaller@gmail.com"
     }],
     "require": {
-        "symfony/var-dumper": "^5.4",
         "guzzlehttp/guzzle": "^7.4"
     }
 }
