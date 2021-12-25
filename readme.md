@@ -21,6 +21,8 @@ require __DIR__ . '/vendor/autoload.php';
 
 $th = new Thumbnail();
 
+$url = 'youtube|vimeo URL video';
+
 // The returned information is ID and URL of the thumbnail
 $data = $th->get($url);
 ```
@@ -38,9 +40,11 @@ require __DIR__ . '/vendor/autoload.php';
 
 $config = [
     'origin' => 'https://www.google.com'
-]
+];
 
 $th = new Thumbnail($config);
+
+$url = 'youtube|vimeo URL video';
 
 // The returned information is ID and URL of the thumbnail
 $data = $th->get($url);
