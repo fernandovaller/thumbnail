@@ -49,3 +49,20 @@ $url = 'youtube|vimeo URL video';
 // The returned information is ID and URL of the thumbnail
 $data = $th->get($url);
 ```
+
+## Noembed
+
+```php
+<?php
+
+use FVCode\Thumbnail\Thumbnail;
+
+require __DIR__ . '/vendor/autoload.php';
+
+$th = new Thumbnail();
+
+$url = 'youtube|vimeo URL video';
+
+// The returned information is array [title, thumbnail_url, video_id, ...]
+$data = $th->getNoembed($url);
+```

@@ -63,4 +63,20 @@ class Thumbnail
 
         return $this->getService($url)->info();
     }
+
+    /**
+     * Retorna os dados do video usando o serviço Noembed.com
+     *
+     * @param string $url
+     * @return array
+     */
+    public function getNoembed($url)
+    {
+        // Validações
+        $this->validate($url);
+
+        $json = file_get_contents("http://noembed.com/embed?url={$url}");
+
+        return json_decode($json, true);
+    }
 }
